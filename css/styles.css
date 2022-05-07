@@ -16,12 +16,39 @@ body {
 ul {
   list-style: none;
 }
+
+/* Хедер */
+.page-header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+.conteiner.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .logo,
 .nav-link,
 .cont-link {
   text-decoration: none;
 }
 .logo {
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -31,7 +58,19 @@ ul {
 .logo-accent-bl {
   color: var(--title-text-cl);
 }
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-list > .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link-active {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
@@ -40,6 +79,10 @@ ul {
   color: var(--accent-text-cl);
 }
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
@@ -49,6 +92,14 @@ ul {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text-cl);
+}
+.cont-list {
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: flex;
+}
+.cont-item + .cont-item {
+  margin-left: 50px;
 }
 .cont-link {
   font-weight: 500;
@@ -61,6 +112,9 @@ ul {
 .cont-link:focus {
   color: var(--accent-text-cl);
 }
+
+/* Секція герой */
+
 .hero {
   background-color: var(--dark-bg-cl);
   text-align: center;
