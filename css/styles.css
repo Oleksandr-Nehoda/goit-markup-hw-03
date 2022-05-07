@@ -18,6 +18,7 @@ ul {
 }
 
 /* Хедер */
+
 .page-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -29,7 +30,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
 }
 .conteiner.main-nav {
   display: flex;
@@ -42,6 +42,7 @@ ul {
 }
 
 .logo,
+.foot-logo,
 .nav-link,
 .cont-link {
   text-decoration: none;
@@ -120,6 +121,9 @@ ul {
   text-align: center;
 }
 .hero-title {
+  margin: 0;
+  padding-top: 200px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5em;
@@ -129,6 +133,9 @@ ul {
   color: #ffffff;
 }
 .hero-btn {
+  margin-bottom: 200px;
+  padding: 10px 30px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -137,9 +144,50 @@ ul {
   color: #ffffff;
   background-color: var(--accent-text-cl);
   cursor: pointer;
+  min-wigth: 200px;
+  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+/*   Наші переваги */
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.advantages-item {
+  width: 270px;
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -151,38 +199,100 @@ ul {
   font-size: 14px;
   line-height: 24px;
 }
+
+/*  Чим ми займаємось */
+
+.section.specialty {
+  padding-top: 0;
+}
 .specialty-title {
+  margin: 0px 0px 50px 0px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17em;
   text-align: center;
   color: var(--title-text-cl);
 }
+.specialty-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.specialty-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.specialty-img {
+  display: block;
+}
+
+/*  Наша команда */
+
 .team {
   background-color: var(--main-bg-cl);
 }
+
+.team-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .team-item {
   background-color: #ffffff;
   text-align: center;
 }
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-title {
+  margin: 0px 0px 50px 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17em;
   text-align: center;
   color: var(--title-text-cl);
 }
+
+.team-img {
+  display: block;
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19em;
   color: var(--title-text-cl);
 }
 .team-profession {
+  margin-top: 0;
+  margin-bottom: 30px;
   line-height: 1.19em;
 }
+
+/*  Футер */
+
 .footer {
   background-color: var(--dark-bg-cl);
+}
+.footer > .conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foot-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  color: var(--accent-text-cl);
 }
 .logo-accent-wh {
   color: #ffffff;
@@ -191,10 +301,22 @@ ul {
   font-style: normal;
 }
 .footer-addr-residential {
+  margin-top: 30px;
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71em;
   color: #ffffff;
 }
+
+.addr-cont-list {
+  margin: 0;
+  padding: 0;
+}
+
+.addr-cont-item:first-child {
+  margin-bottom: 9px;
+}
+
 .footer-cont-link {
   text-decoration: none;
   font-size: 14px;
@@ -243,16 +365,4 @@ ul {
 }
 .portfolio-card-set {
   line-height: 1.88em;
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
