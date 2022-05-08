@@ -160,8 +160,8 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
   width: 1200px;
-  outline: 2px solid tomato;
 }
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -241,8 +241,12 @@ ul {
 }
 
 .team-item {
+  width: 270px;
   background-color: #ffffff;
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -265,6 +269,7 @@ ul {
 .team-name {
   margin-top: 0px;
   margin-bottom: 10px;
+  padding: 0 15px;
 
   font-weight: 500;
   font-size: 16px;
@@ -274,6 +279,8 @@ ul {
 .team-profession {
   margin-top: 0;
   margin-bottom: 30px;
+  padding: 0 15px;
+
   line-height: 1.19em;
 }
 
@@ -303,6 +310,7 @@ ul {
 .footer-addr-residential {
   margin-top: 30px;
   margin-bottom: 9px;
+
   font-size: 14px;
   line-height: 1.71em;
   color: #ffffff;
@@ -327,9 +335,25 @@ ul {
 .footer-cont-link:focus {
   color: var(--accent-text-cl);
 }
-/* Page portfolio */
 
+/* Сторінка портфоліо */
+
+/*  Список кнопок */
+
+.portfolio-list-btn {
+  margin: 0 0 50px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item-btn:not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio-btn-active {
+  padding: 6px 22px;
+  border: 0;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -338,9 +362,17 @@ ul {
   color: #ffffff;
   background-color: var(--accent-text-cl);
   border-radius: 4px;
+
   cursor: pointer;
 }
+.portfolio-btn-active:hover,
+.portfolio-btn-active:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .portfolio-btn {
+  padding: 6px 22px;
+  border: 0;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -355,8 +387,37 @@ ul {
 .portfolio-btn:focus {
   color: #ffffff;
   background-color: var(--accent-text-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+/* Список карток */
+
+.portfolio-card-list {
+  margin: -15px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-card-item {
+  width: 370px;
+  margin: 15px;
+}
+
+.portfolio-card-img {
+  display: block;
+}
+
+.card-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .portfolio-card-title {
+  margin: 0 0 4px 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
@@ -364,5 +425,6 @@ ul {
   color: var(--title-text-cl);
 }
 .portfolio-card-set {
+  margin: 0;
   line-height: 1.88em;
 }
