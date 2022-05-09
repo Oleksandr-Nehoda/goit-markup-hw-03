@@ -24,6 +24,12 @@ ul {
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .conteiner {
   margin-left: auto;
   margin-right: auto;
@@ -31,6 +37,7 @@ ul {
   padding-right: 15px;
   width: 1200px;
 }
+
 .conteiner.main-nav {
   display: flex;
   align-items: center;
@@ -44,11 +51,15 @@ ul {
 .logo,
 .foot-logo,
 .nav-link,
-.cont-link {
+.cont-link,
+.portfolio-card-link {
   text-decoration: none;
 }
+
 .logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -103,6 +114,9 @@ ul {
   margin-left: 50px;
 }
 .cont-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14em;
@@ -117,12 +131,13 @@ ul {
 /* Секція герой */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--dark-bg-cl);
   text-align: center;
 }
 .hero-title {
   margin: 0;
-  padding-top: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -133,7 +148,6 @@ ul {
   color: #ffffff;
 }
 .hero-btn {
-  margin-bottom: 200px;
   padding: 10px 30px;
 
   font-family: inherit;
@@ -144,23 +158,13 @@ ul {
   color: #ffffff;
   background-color: var(--accent-text-cl);
   cursor: pointer;
-  min-wigth: 200px;
+  min-width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
 /*   Наші переваги */
-
-.section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  width: 1200px;
-}
 
 .visually-hidden {
   position: absolute;
@@ -189,6 +193,7 @@ ul {
 }
 
 .advantages-title {
+  margin: 0 0 10px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14em;
@@ -196,6 +201,7 @@ ul {
   color: var(--title-text-cl);
 }
 .advantages-text {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -205,6 +211,7 @@ ul {
 .section.specialty {
   padding-top: 0;
 }
+
 .specialty-title {
   margin: 0px 0px 50px 0px;
 
@@ -230,7 +237,7 @@ ul {
 
 /*  Наша команда */
 
-.team {
+.section.team {
   background-color: var(--main-bg-cl);
 }
 
@@ -263,13 +270,16 @@ ul {
 
 .team-img {
   display: block;
-  margin-bottom: 30px;
+}
+
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
   margin-top: 0px;
   margin-bottom: 10px;
-  padding: 0 15px;
 
   font-weight: 500;
   font-size: 16px;
@@ -277,9 +287,7 @@ ul {
   color: var(--title-text-cl);
 }
 .team-profession {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding: 0 15px;
+  margin: 0;
 
   line-height: 1.19em;
 }
@@ -288,13 +296,14 @@ ul {
 
 .footer {
   background-color: var(--dark-bg-cl);
-}
-.footer > .conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .foot-logo {
+  display: block;
+  margin-bottom: 30px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -308,7 +317,7 @@ ul {
   font-style: normal;
 }
 .footer-addr-residential {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 9px;
 
   font-size: 14px;
@@ -426,5 +435,7 @@ ul {
 }
 .portfolio-card-set {
   margin: 0;
+
+  color: var(--main-text-cl);
   line-height: 1.88em;
 }
